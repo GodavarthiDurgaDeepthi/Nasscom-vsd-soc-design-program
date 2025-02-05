@@ -119,21 +119,7 @@ Implementing the internal connections using the available Metal layers
   
 * Timing Verification:
   - Static Timing Analysis(STA)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Inroducing OPENLANE :
+    
+# Introducing OPENLANE :
 
 Started as an 
