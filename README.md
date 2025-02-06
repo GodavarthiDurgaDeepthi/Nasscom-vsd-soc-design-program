@@ -233,9 +233,7 @@ Implementing the internal connections using the available Metal layers
 
 ![image](https://github.com/user-attachments/assets/f516492f-125d-4c06-95ae-ae56ad23bb74)
 
-here H= height
-
-     w = width
+here H= height , w = width
 
 
 # Utilization Factor and Aspect Ratio
@@ -248,17 +246,70 @@ Utilization Factor : It is the area occupied by the netlsit to the total area of
 
 Aspect Ratio : height of core diveded by width of core
 
-* When aspect Ratio is 1 it indicates that the chip is square shape. when aspect ratio
-
-* 
-
-
+* When aspect Ratio is 1 it indicates that the chip is square shape. when aspect ratio is other than 1,indicates that the chip is rectangular shape.
+  
+# Aspect Ratio = height / width
 
 
-
+![image](https://github.com/user-attachments/assets/404a3d9f-1b33-49a0-a03f-961ded64627b)
 
 
 
+Let's put the dimensions we have, we get
+
+Utilization factor = 4*1sq.unit / 4unit *2unit = 0.5
+
+So, utilization factor = 0.5 (It signifies Rectangle shape)
+
+Aspect Ratio = Height / width = 2 unit / 2unit = 1
+
+Whenever Aspect Ratio is 1 it signifies that chip is square shaped. When it is not 1 it means the chip is in rectangular shape.
+
+![image](https://github.com/user-attachments/assets/cd143dd9-0077-4ac2-b656-0b5f7c2774e0)
+
+
+so the design will look like above image
+
+
+# Pre-palced cells : 
+Blocks have user-defined locations,and hence are placed in chip before automated placememt-and-routing and are called as pre-placed cells.
+
+
+# De-coupling Capacitors
+
+![image](https://github.com/user-attachments/assets/56fc86f1-dd29-4336-918e-8b7886c94039)
+
+Consider the amount of switching current required for a complex circuit something like above
+
+1.consider capacitance to be zero for the discussiion. Rdd,Rss,Ldd and Lss are well defined values.
+
+2.During switching operation ,the circuit demands switching current i.e peak current (I peak)
+
+3.Now,due to the presence od Rddand Ldd,there will be a voltage drop access them and the voltage at Node 'A would be Vdd' instead of Vdd. 
+
+# Noise Margin :
+
+** If Vdd goes below the noise margin ,due to Rdd and Ldd ,the logic '1' at the output of circuit wont be detected as logic '1' at the input of the circuit following this circuit  
+
+![image](https://github.com/user-attachments/assets/cdc9474d-0edc-4da6-b9f6-3d4f6fb5c90f)
+
+We soleve this problem using by adding De-coupling Capcacitors 
+
+sol: 1. Addition of Decoupling Capacitor in parallel with the circuit .
+
+2.Every time the circuit switches,it draws current from Cd, whereas ,the RL network is used to replenish the charge into Cd.
+
+
+![image](https://github.com/user-attachments/assets/9924785a-396d-4d0d-84bb-0147c6fd7cea)
+
+* The above image is the adding de-coupling capacitor to the design.
+  
+![image](https://github.com/user-attachments/assets/8032b1a4-f123-41ba-8da8-baf6e232b661)
+
+
+# POWER PLANING 
+
+![image](https://github.com/user-attachments/assets/72d20263-5915-4a9e-92c2-a8b2f8f9338c)
 
 
 
@@ -266,30 +317,3 @@ Aspect Ratio : height of core diveded by width of core
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Started as an 
