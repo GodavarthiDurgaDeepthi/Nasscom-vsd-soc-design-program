@@ -3,7 +3,8 @@
 # Contents
 
 # Day 1 : Inception of open-source EDA, OpenLANE and Sky130 PDK 
-# *How to talk to computers
+
+* How to talk to computers
 
 * Introduction to QFN-48 Package, chip, pads, core, die and IPs
 
@@ -11,7 +12,7 @@
 
 *  From Software Applications to Hardware
 
-# *SoC design and OpenLANE
+* SoC design and OpenLANE
 
 * Introduction to all components of open-source digital asic design
 
@@ -21,7 +22,7 @@
 
 * Introduction to OpenLANE detailed ASIC design flow
 
-# * Get familiar to open-source EDA tools
+* Get familiar to open-source EDA tools
 
 * OpenLANE Directory structure in detail
 
@@ -56,6 +57,20 @@ The Entire Design starts from Architecture and it can be implemented by  RTL to 
 
 *EDA TOOLS:
 ![image](https://github.com/user-attachments/assets/bde5b9ef-1a30-442c-8098-ff73d634637f) 
+
+Basic Linux Commands:
+
+cd : opens the particular folder
+
+ls : lists the content of the folder
+
+pwd : shows the present working directory
+
+mkdir : to make a new directory
+
+command --help : shows the complete use that command
+
+clear : clears the terminal screen
 
 
 # *ASIC(Application Specific Integrated circuit) Design Flow:
@@ -165,12 +180,77 @@ Implementing the internal connections using the available Metal layers
 
 
 
+# DAY 1 LAB REPORTS : 
 
 
 
+# DAY 2 :  Good floorplan vs bad floorplan and introduction to library cells
+
+* Chip Floor planning considerations
+
+* Utilization factor and aspect ratio
+
+* Concept of pre-placed cells
+
+* De-coupling capacitors
+
+* Power planning
+
+* Pin placement and logical cell placement blockage
+
+* Steps to run floorplan using OpenLANE
+
+* Library building and Placement
+
+* Netlist binding and initial place design
+
+* Optimize placement using estimated wire-length and capacitance
+
+* Final placement optimization
+
+* Need for libraries and characterization
+
+* Congestion aware placement using RePlAce
+
+* Cell design and characterization flows
+
+* Inputs for cell design flow
+
+* Circuit design steps
+
+* Layout design step
+
+* Typical characterization flow
+
+* General timing characterization parameters
+
+* Timing threshold definitions
+
+*Propagation delay and transition time
+
+# THEORY :
 
 
+![image](https://github.com/user-attachments/assets/f516492f-125d-4c06-95ae-ae56ad23bb74)
 
+here H= height
+
+     w = width
+
+
+# Utilization Factor and Aspect Ratio
+
+Utilization Factor : It is the area occupied by the netlsit to the total area of the core.
+
+* when the utilization factor is 1 that is 100% ,which means the core is completely occupied by the logic.
+
+  #  Utilization Factor = Area Occupied by the netlsit / Total area of the core.
+
+Aspect Ratio : height of core diveded by width of core
+
+* When aspect Ratio is 1 it indicates that the chip is square shape. when aspect ratio
+
+* 
 
 
 
