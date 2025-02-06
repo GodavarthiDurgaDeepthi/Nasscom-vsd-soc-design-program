@@ -309,7 +309,96 @@ sol: 1. Addition of Decoupling Capacitor in parallel with the circuit .
 
 # POWER PLANING 
 
-![image](https://github.com/user-attachments/assets/72d20263-5915-4a9e-92c2-a8b2f8f9338c)
+
+![image](https://github.com/user-attachments/assets/fa75b881-2b1a-4963-8297-721004d07ac2)
+
+The below image is the power mesh creation 
+
+![image](https://github.com/user-attachments/assets/1d5b94f2-132d-472e-916d-ad15217d7087)
+
+# Pin Placement 
+
+lets take the below example for pin placement 
+
+![image](https://github.com/user-attachments/assets/e85f42d4-9dca-4a1a-b3dc-c07e69d89f98)
+
+* The inputs ports of pin placement is done at left hand side
+
+* And the output ports of pin placement is done at right hand side 
+
+![image](https://github.com/user-attachments/assets/bc2ff279-d230-4727-ab6c-5f403daafc3d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
