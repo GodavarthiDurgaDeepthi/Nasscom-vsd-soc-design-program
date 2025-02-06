@@ -4,19 +4,33 @@
 
 # Day 1 : Inception of open-source EDA, OpenLANE and Sky130 PDK 
 # *How to talk to computers
+
 * Introduction to QFN-48 Package, chip, pads, core, die and IPs
+
 *  Introduction to RISC-V
+
 *  From Software Applications to Hardware
+
 # *SoC design and OpenLANE
+
 * Introduction to all components of open-source digital asic design
+
 * Simplified RTL2GDS flow
+
 * Introduction to OpenLANE and Strive chipsets
+
 * Introduction to OpenLANE detailed ASIC design flow
+
 # * Get familiar to open-source EDA tools
+
 * OpenLANE Directory structure in detail
+
 * Design Preparation Step
+
 * Review files after design prep and run synthesis
+
 * OpenLANE Project Git Link Description
+
 * Steps to characterize synthesis results
 
 # Theory  
@@ -92,9 +106,13 @@ It is the process of converting High level description language into technology 
 * CLOCK TREE SYNTHESIS(CTS):
 
 Create a clock tree distribution network
+        
           * to deliver the clock to all sequential elemnet (e.g:flip flops) 
+          
           * with minimum skew(zero is hard to achieve)
+          
           * And in agood shape 
+          
           * Usually a tree(H,X...)
   
   ![image](https://github.com/user-attachments/assets/a4d6d5b9-fde0-44c4-877d-e6ed8d556af7)
@@ -106,20 +124,92 @@ Implementing the internal connections using the available Metal layers
 ![image](https://github.com/user-attachments/assets/18cc7bf4-09da-492e-b8b1-745ba66f2047)
 
 * Metal Tracks from a routing grid
+
 * routing grid is huge
+
 * Devide and conquer 
+
   * Global Routing : Generates routing guides.
+
   * Detailed Routing:uses the routing guides to implement the actual wiring.
+
 
 * SIGN OFF:
 
 * Physical verifications:
+
   -Design Rule check (DRC)
-   -layout vs Schematic (LVS)
+
+    -layout vs Schematic (LVS)
   
 * Timing Verification:
+
   - Static Timing Analysis(STA)
     
 # Introducing OPENLANE :
+
+* Started as an Open-source flow for a true open-source Tape-out Experiment.
+
+* Strive is a family of open everything SoCs 
+
+        * open PDK ,Open EDA ,open RTL.
+
+* The Main Goal of openlane is produce a clean GDSII with no human intervention.(n0-human-in-the-loop)
+
+# Introduction to opnlane detailed Asic design flow 
+
+![image](https://github.com/user-attachments/assets/f5eb0c1c-f4ab-4602-a1d3-0f2c0915033e)
+
+
+* The above flow diagram shows the openlane asic flow ,it has several steps.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Started as an 
