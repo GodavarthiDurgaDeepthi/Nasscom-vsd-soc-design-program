@@ -329,34 +329,81 @@ lets take the below example for pin placement
 ![image](https://github.com/user-attachments/assets/bc2ff279-d230-4727-ab6c-5f403daafc3d)
 
 
+# PLACEMENT 
+
+![image](https://github.com/user-attachments/assets/280b3314-412c-411c-86eb-4ea985e2a8bf)
+
+# Optimized Placement 
+
+** Optimized placement is the stage  where we estimate wire length and capacitance and,based on that ,insert repeators.
+
+![image](https://github.com/user-attachments/assets/8df3d08e-abc2-47e3-b45a-2b88f03407f2)
+
+# LIBRARY CHARACTERIZATION AND MODELLING 
+
+* Part 1 :Concepts and theory - NLDM ,CSS timing,power and noise characterization  
+
+1 . In this the frist one is "LOGIC SYNTHESIS" ,in this the RTL code converted into optimized gate level netlist.
+
+![image](https://github.com/user-attachments/assets/8c80928e-593c-4a02-ac58-f3490452fa8e)
+
+2. second one is "FLOORPLAN",in this it decides the core and die size. these sizes completely dependent on the gates of netlist 
+
+![image](https://github.com/user-attachments/assets/7b275d16-bce2-405b-a665-a4e66e1d3c95)
+
+3.The third one is "PLACEMENT" The standrad cells are actually placed here.
+
+![image](https://github.com/user-attachments/assets/b0f71bf1-9315-4738-b8e7-6cb91a2573be)
+
+4. The fourth one is "CTS" .in this clock tree can be build usind clock buffers.
+
+![image](https://github.com/user-attachments/assets/4b7831a7-35fb-476c-ba81-8990235c5afd)
+
+5. The fivth is "ROUTING" ,in this the actual routing of design is done here.
+
+![image](https://github.com/user-attachments/assets/a249fad1-0d3f-402f-b8e1-c23b87b8126e)
+
+6. sixth one is "STATIC TIMIMG ANALYSIS",in this it can analyze the setup and hold timing of design.
+
+![image](https://github.com/user-attachments/assets/3007d92a-b0dd-4c29-b07f-bb287c24356d)
 
 
+# INPUTS FOR CELL DESIGN FLOW 
+
+![image](https://github.com/user-attachments/assets/e3d81266-a92a-477c-8428-5111148bbf10)
+
+fom above we look an example of inverter cell view 
+
+*Mainly cell view can be divided into 3 parts i.e : 1)inputs  2) Design steps  3)outputs
+
+1) Inputs : Process Design Kit (PDK), DRC&LVS rules, SPICE Models .library & user-defined specs     
+
+![image](https://github.com/user-attachments/assets/c134eed9-8611-4d70-a099-a809dc581128)
+
+2) Design Steps :: circuit design ,layout design, characterization
 
 
+![image](https://github.com/user-attachments/assets/16649e97-b8fc-4337-9c96-6c2f364cd4cb)
+
+* Layout Design :
+
+![image](https://github.com/user-attachments/assets/7bb60642-3a72-4817-997f-72164e2fe24c)
 
 
+![image](https://github.com/user-attachments/assets/593427f5-8c1d-4de9-9699-8300eb339ad8) 
+
+* Characterization flow :
+
+![image](https://github.com/user-attachments/assets/f5e336da-2dea-4cba-9032-460b50e7622c)
 
 
+* Timing Characterization :
+  a) 
+
+  ![image](https://github.com/user-attachments/assets/ef70b0e5-ff95-4e0a-bc5e-8c0dbf922cef)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+3) Outputs : CDS(  circuit Description Language) , GDSII ,LEF , Extracted Spice Netlsit (.cir) ,Timing , Noise , Power .libs ,function.
 
 
 
