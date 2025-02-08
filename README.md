@@ -398,11 +398,29 @@ fom above we look an example of inverter cell view
 
 
 * Timing Characterization :
-  a) 
 
-  ![image](https://github.com/user-attachments/assets/ef70b0e5-ff95-4e0a-bc5e-8c0dbf922cef)
+![image](https://github.com/user-attachments/assets/920ef075-b8d6-4f2e-9808-775ad0de7218)
 
 
+a)Timing Thresh hold
+  
+ ![image](https://github.com/user-attachments/assets/ef70b0e5-ff95-4e0a-bc5e-8c0dbf922cef)
+
+ b) Popogation Delay 
+
+ ![image](https://github.com/user-attachments/assets/8c0f20c4-b2c1-44af-ba32-f27f91ef09de)
+
+
+![image](https://github.com/user-attachments/assets/ea920050-44b1-4b18-a787-be517bb47eb0)
+
+c)Transition Time 
+
+ ![image](https://github.com/user-attachments/assets/7d930e4a-97ea-4f28-9b39-82c24b51cb84)
+
+![image](https://github.com/user-attachments/assets/f0e7b7b6-9b28-4bb0-8c42-b29e6bea99bf)
+
+
+d)Output current Wave form 
 3) Outputs : CDS(  circuit Description Language) , GDSII ,LEF , Extracted Spice Netlsit (.cir) ,Timing , Noise , Power .libs ,function.
 
 
