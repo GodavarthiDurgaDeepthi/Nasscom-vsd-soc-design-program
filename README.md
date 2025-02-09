@@ -56,7 +56,9 @@ The Entire Design starts from Architecture and it can be implemented by  RTL to 
 
 
 *EDA TOOLS:
+
 ![image](https://github.com/user-attachments/assets/bde5b9ef-1a30-442c-8098-ff73d634637f) 
+
 
 Basic Linux Commands:
 
@@ -173,6 +175,8 @@ Implementing the internal connections using the available Metal layers
 
 # Introduction to opnlane detailed Asic design flow 
 
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. The flow performs all ASIC implementation steps from RTL all the way down to GDSII.
+
 ![image](https://github.com/user-attachments/assets/f5eb0c1c-f4ab-4602-a1d3-0f2c0915033e)
 
 
@@ -182,7 +186,41 @@ Implementing the internal connections using the available Metal layers
 
 # DAY 1 LAB REPORTS : 
 
+# Design Preparation steps
 
+# openlane
+
+![image](https://github.com/user-attachments/assets/3759afb9-445a-4140-832a-3ae61331d831)
+
+![image](https://github.com/user-attachments/assets/311a83b9-1db0-4206-b8f2-ff87eb4b17fa)
+
+* The Next step is Run the synthesis 
+
+# Run Synthesis
+
+![image](https://github.com/user-attachments/assets/3482a33f-0824-41f1-b91d-07418b78171d)
+
+
+
+# STA report
+![image](https://github.com/user-attachments/assets/b6ed72f6-c3a5-48cf-8420-7716fcdb2343)
+
+![image](https://github.com/user-attachments/assets/6d6a2849-80cc-4715-8bdb-ec3315c8ab42)
+
+
+In below it contains information of number of wires and cells in design
+
+flop ratio = Toatal number of cells / Total number of flipflops 
+
+flop Ratio = 1613/14876 = 0.1084
+
+![image](https://github.com/user-attachments/assets/a37ff018-1b7a-4d45-b445-ae9642af066a)
+
+# Synthesis Result
+
+![image](https://github.com/user-attachments/assets/3feaaa17-1eb0-4bf2-b746-7a6b5e8f83b2)
+
+![image](https://github.com/user-attachments/assets/94f0f50b-ec21-4177-bbaa-8e09f31ace04)
 
 # DAY 2 :  Good floorplan vs bad floorplan and introduction to library cells
 
@@ -419,25 +457,82 @@ c)Transition Time
 
 ![image](https://github.com/user-attachments/assets/f0e7b7b6-9b28-4bb0-8c42-b29e6bea99bf)
 
-
 d)Output current Wave form 
+
 3) Outputs : CDS(  circuit Description Language) , GDSII ,LEF , Extracted Spice Netlsit (.cir) ,Timing , Noise , Power .libs ,function.
 
 
 
+# Day 2 LAb REPORTS
+
+The Next step after synthesis is floorplan
+
+Run the floorplan using the command run_floorplan
+
+![image](https://github.com/user-attachments/assets/4f407ae6-3912-42da-b72b-a881414e3499) 
+
+![image](https://github.com/user-attachments/assets/225c2d08-d5eb-4fcb-9a36-052477425657)
 
 
+![image](https://github.com/user-attachments/assets/2a2686b0-3005-4b94-b07b-ee033418fa68)
+
+![image](https://github.com/user-attachments/assets/3f18339d-40eb-4131-9905-bd7ba9317a94)
+
+After run the floorplan we have one def file i.e picorv32a.floorplan.def
+
+![image](https://github.com/user-attachments/assets/68d23bfa-e41a-4cc7-afd6-775addc89728)
+
+![image](https://github.com/user-attachments/assets/4c56fe23-8295-4bef-ba2b-19faac8c12b5)
+
+In above the die area = (0 0)  (660685  671405)
+
+1 micron=1000 database units
+
+width=660685/1000 = 660.685
+
+height = 671405/1000 = 671.405
+
+# Floorplan Layout in Magic
+
+path is 
+
+![image](https://github.com/user-attachments/assets/c83049e9-5774-4a9f-8082-787b7d6d9ae7)
+
+![image](https://github.com/user-attachments/assets/573db50d-d2ba-4605-a0fa-43cae6276108)
+
+![image](https://github.com/user-attachments/assets/2aa03a11-2123-4ad3-a037-21595eaca42d)
+
+![image](https://github.com/user-attachments/assets/85ec7ecd-c4c2-4183-a07c-2b4d67c22fb8)
+
+![image](https://github.com/user-attachments/assets/8e66e46e-84a5-46b5-848d-7a0766a046bb)
+
+# Palcement 
+ 
+after floorplan next step is placemnet 
+
+run the placement by using the command 'run_placement' 
+
+Placement : Placement is the stage where the standard cell placement can be fixed.
+
+In placement there are two steps 
+
+1)Global Placemet: It is nothing but coars placement
+
+2)Detailed placement : It is nothing but legalized placement
 
 
+![image](https://github.com/user-attachments/assets/9e0cb3e8-6f9b-4e85-b19c-16eda4b017b1)
+
+![image](https://github.com/user-attachments/assets/3bebdde8-54cf-4eaa-a1b4-c01b31f1dbf9)
+
+# congestion aware placemnet using Replace
+![image](https://github.com/user-attachments/assets/ea38f519-86fc-45eb-8107-1ab237d55422)
 
 
+![image](https://github.com/user-attachments/assets/872fd3e3-7b4c-4cac-bacb-32c0ee9d56c8)
 
 
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/a51ca449-0399-484e-a311-9b264d936503)
 
 
 
