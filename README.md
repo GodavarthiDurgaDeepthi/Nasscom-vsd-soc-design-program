@@ -1,4 +1,4 @@
-# Nasscom-vsd-soc-design-program
+![image](https://github.com/user-attachments/assets/1aac8e30-8a1c-4b5f-90de-06f9f384f910)# Nasscom-vsd-soc-design-program
 
 # Contents
 
@@ -494,17 +494,10 @@ height = 671405/1000 = 671.405
 
 # Floorplan Layout in Magic
 
-path is 
+![image](https://github.com/user-attachments/assets/2214e2dc-c540-4dcb-af36-c593e69fb670)
+ 
+![image](https://github.com/user-attachments/assets/4293643a-589f-4e26-97b2-08c0d9f0e1d1)
 
-![image](https://github.com/user-attachments/assets/c83049e9-5774-4a9f-8082-787b7d6d9ae7)
-
-![image](https://github.com/user-attachments/assets/573db50d-d2ba-4605-a0fa-43cae6276108)
-
-![image](https://github.com/user-attachments/assets/2aa03a11-2123-4ad3-a037-21595eaca42d)
-
-![image](https://github.com/user-attachments/assets/85ec7ecd-c4c2-4183-a07c-2b4d67c22fb8)
-
-![image](https://github.com/user-attachments/assets/8e66e46e-84a5-46b5-848d-7a0766a046bb)
 
 # Palcement 
  
@@ -525,41 +518,215 @@ In placement there are two steps
 
 ![image](https://github.com/user-attachments/assets/3bebdde8-54cf-4eaa-a1b4-c01b31f1dbf9)
 
-# congestion aware placemnet using Replace
-![image](https://github.com/user-attachments/assets/ea38f519-86fc-45eb-8107-1ab237d55422)
+# congestion aware placemnet using Replace 
+
+![image](https://github.com/user-attachments/assets/478dd6a4-e6a9-4b07-bec5-2f002b3eb135)
+
+![image](https://github.com/user-attachments/assets/81d25b85-4663-4e76-992d-92f23329f998)
+
+![image](https://github.com/user-attachments/assets/63ecddf9-79e0-4cb8-8a38-da26d39930a1)
+
+# Day 3 : Design library cell using Magic Layout and ngspice characterization
+
+Content:
+
+ * Labs for CMOS inverter ngspice simulations
+
+* IO placer revision
+
+* SPICE deck creation for CMOS inverter
+
+* SPICE simulation lab for CMOS inverter
+
+* Switching Threshold Vm
+
+* Static and dynamic simulation of CMOS inverter
+
+* Lab steps to git clone vsdstdcelldesign
+
+* Inception of layout ̂A CMOS faabrication process
+
+* Create Active regions
+
+* Formation of N-well and P-well
+
+* Formation of gate terminal
+
+* Lightly doped drain (LDD) formation
+
+* Source and drain formation
+
+* Local interconnect formation
+
+* Higher level metal formation
+
+* Lab introduction to Sky130 basic layers layout and LEF using inverter
+
+* Lab steps to create std cell layout and extract spice netlist
+
+* Sky130 Tech File Labs
+
+* Lab steps to create final SPICE deck using Sky130 tech
+
+* Lab steps to characterize inverter using sky130 model files
+
+* Lab introduction to Magic tool options and DRC rules
+
+* Lab introduction to Sky130 pdk's and steps to download labs
+
+* Lab introduction to Magic and steps to load Sky130 tech-rules
+
+* Lab exercise to fix poly.9 error in Sky130 tech-file
+
+* Lab exercise to implement poly resistor spacing to diff and tap
+
+* Lab challenge exercise to describe DRC error as geometrical construct
+
+* Lab challenge to find missing or incorrect rules and fix them
+
+# Theory
+
+# SPICE deck creation for CMOS inverter :
+
+![image](https://github.com/user-attachments/assets/02c22f23-2800-4f80-bf39-2f794d7f4148)
+
+![image](https://github.com/user-attachments/assets/b5ce9e89-0c86-4337-a880-8e4f7533a4e2)
+
+![image](https://github.com/user-attachments/assets/7994c749-6c99-46c2-b349-576ac983d17b)
 
 
-![image](https://github.com/user-attachments/assets/872fd3e3-7b4c-4cac-bacb-32c0ee9d56c8)
+![image](https://github.com/user-attachments/assets/df5889e4-8809-4480-854f-03ea6b0df727)
+
+![image](https://github.com/user-attachments/assets/1484ff84-2dff-4df3-93b5-fa75662d214a)
+
+![image](https://github.com/user-attachments/assets/03f7892f-b006-4c20-84a1-3d0381f82105)
+
+# Create Active Region:
+
+Active Region is the place where we see CMOS & NMOS 
+
+# 16-Mask CMOS process 
+
+1) Selecting a substate
+
+2) Creating Active Region for Transistors
+
+![image](https://github.com/user-attachments/assets/78c05a97-332e-43d0-ba2f-dcdb69f9a58b)
+
+![image](https://github.com/user-attachments/assets/0a6dd8c3-8cf2-467c-86fd-6549b8b3c56d)
+
+* Removing Mask
+
+![image](https://github.com/user-attachments/assets/bea49926-dcca-48fb-8cfc-f3f632b92356)
+
+* Removing Photoresist
+
+![image](https://github.com/user-attachments/assets/fc2cc71a-e714-475a-88dd-52554aca0ecf)
+
+*Removing silicon Nitrate 
+
+![image](https://github.com/user-attachments/assets/3d33873a-efe5-4e1a-96f5-749c867b55a4)
 
 
-![image](https://github.com/user-attachments/assets/a51ca449-0399-484e-a311-9b264d936503)
+3) N-Well and P-Well formation :
+
+Top view of Mask 2
+
+![image](https://github.com/user-attachments/assets/9e433286-75ba-4918-9883-392cae7f863a)
+
+![image](https://github.com/user-attachments/assets/782f1d81-a492-47ca-a60d-c5ec83620c5a)
+
+* Boron is a P-type it creates a P-Well,which needs high energy needed for creating P-Well
+
+ ![image](https://github.com/user-attachments/assets/01936a71-63c6-4014-a7c5-497358ad7a1e)
+
+![image](https://github.com/user-attachments/assets/045852c1-a934-4ada-be19-3bbd6d2c92bc)
+
+![image](https://github.com/user-attachments/assets/7e1db51b-c86c-4b96-b843-59e7e89d2ec7)
+
+4 ) Creating Gates :
+
+![image](https://github.com/user-attachments/assets/c3ddc58f-1720-4baf-a461-900961922b3c)
+ 
+![image](https://github.com/user-attachments/assets/6d563a6e-002f-463d-8f19-705d7a8711a4)
+
+![image](https://github.com/user-attachments/assets/4b8408b2-7342-4724-8909-fd444e6acd6e)
+
+![image](https://github.com/user-attachments/assets/36f7d7a3-5797-4c84-9b61-e3e3a392417f)
+
+* Top View of Gate Mask 6
+
+![image](https://github.com/user-attachments/assets/d9b13790-2d16-47ad-b72b-b1fe430e1f82)
 
 
+5) Lightly dopped drain (LLD) formation
+
+![image](https://github.com/user-attachments/assets/b203e62c-a52d-4cdf-96fa-e185cec97ae9)
+
+![image](https://github.com/user-attachments/assets/a42d2451-59eb-4d3d-a745-2fde1f2a5860)
+
+![image](https://github.com/user-attachments/assets/4bcced79-5632-4b28-9f4c-d95edc97f864)
+
+![image](https://github.com/user-attachments/assets/6e233960-7b25-4fc5-aa5a-8112ab625b9d)
+
+![image](https://github.com/user-attachments/assets/53f2c95e-38e7-43ef-99ad-dbd3a7e16227)
+
+![image](https://github.com/user-attachments/assets/ed79ac4b-9006-4479-a773-a04a38dcee5c)
+
+6) Source And Drain Formation
+
+![image](https://github.com/user-attachments/assets/5bbb61d7-809d-4739-a3d5-c2ef1ed551e3)
+
+![image](https://github.com/user-attachments/assets/c4b8f1f6-8e37-4fd1-9b18-2f961a2522d3)
+
+![image](https://github.com/user-attachments/assets/c4c1e785-30d0-47f2-9a6c-6cc17e008f15)
+
+![image](https://github.com/user-attachments/assets/12b1d14a-1d29-4f7a-86df-00d5ff744cf6)
+
+![image](https://github.com/user-attachments/assets/1fdf418c-73e8-434c-9627-d74758b0cdeb)
+
+7) steps to form contacts and interconnects (local) 
+
+ * Deposite titanium on wafer surface, using sputtering 
+
+![image](https://github.com/user-attachments/assets/fdbdc5ec-5747-4850-9d4a-7969117e5f3a)
+
+![image](https://github.com/user-attachments/assets/c47ed4d2-d528-4e7a-824a-80721a55b48c)
+
+![image](https://github.com/user-attachments/assets/ade3381d-25c3-4762-b9ff-220766b3dc4d)
+
+![image](https://github.com/user-attachments/assets/f3a668f4-f468-4303-8e99-5f97ea394fa8)
+
+* TiN is etched using RCA cleaning
+
+![image](https://github.com/user-attachments/assets/8c545865-8a06-4279-9299-0374fb9dd861)
+
+![image](https://github.com/user-attachments/assets/74c1311d-538c-4f19-8b7c-f2ee558abb9d)
+
+![image](https://github.com/user-attachments/assets/646030a9-f028-49de-9817-431c952eda44)
 
 
+8) Higher level metal Formation
 
+![image](https://github.com/user-attachments/assets/37a93098-3604-41d1-889f-4cc92d6bfaa2)
 
+![image](https://github.com/user-attachments/assets/5aa78065-f32b-45b0-aa6b-2ac6cab3e23a)
 
+![image](https://github.com/user-attachments/assets/67d185f9-7ad5-4226-8635-65237a160d5a)
 
+![image](https://github.com/user-attachments/assets/7dd08b17-4126-4ffe-8c59-2c0431ef5c31)
 
+![image](https://github.com/user-attachments/assets/fd96be8e-839a-4ca7-88de-a6748564762e)
 
+![image](https://github.com/user-attachments/assets/3d32bd17-47cf-4d08-a6ab-2fccaf6dce82)
 
+![image](https://github.com/user-attachments/assets/441643d3-1b10-4573-a9a1-40df2c1df70a)
 
+![image](https://github.com/user-attachments/assets/55165152-2c5e-49a6-b982-179f76f284bb)
 
+![image](https://github.com/user-attachments/assets/07ba6b2e-5c82-4119-905c-bd7e372804e5)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/d2691d3c-c722-4615-995b-a0f4d921fbb2)
 
 
 
