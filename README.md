@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1aac8e30-8a1c-4b5f-90de-06f9f384f910)# Nasscom-vsd-soc-design-program
+
 
 # Contents
 
@@ -728,7 +728,13 @@ Top view of Mask 2
 
 ![image](https://github.com/user-attachments/assets/d2691d3c-c722-4615-995b-a0f4d921fbb2)
 
+# Day 3 LAB Reports
 
+IO PLACER Rivision:
+
+![image](https://github.com/user-attachments/assets/b6f998f5-5eb1-4b02-90c4-420805dd0597)
+
+Clone custom inverter standard cell design from github repository and loaded the custom inverter layout in magic
 
 
 
