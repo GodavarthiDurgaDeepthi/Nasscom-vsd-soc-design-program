@@ -732,9 +732,41 @@ Top view of Mask 2
 
 IO PLACER Rivision:
 
-![image](https://github.com/user-attachments/assets/b6f998f5-5eb1-4b02-90c4-420805dd0597)
+![image](https://github.com/user-attachments/assets/5704e9fe-b170-4633-821b-d7e48b9b6176)
 
-Clone custom inverter standard cell design from github repository and loaded the custom inverter layout in magic
+# LAB STEPS TO GIT CLONE VSDSTDCELL DESIGN
+
+![image](https://github.com/user-attachments/assets/69748ce0-b679-4f75-a540-60ab62e0f50d)
+
+![Uploading image.png…]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
