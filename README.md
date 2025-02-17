@@ -738,11 +738,30 @@ IO PLACER Rivision:
 
 ![image](https://github.com/user-attachments/assets/69748ce0-b679-4f75-a540-60ab62e0f50d)
 
-![Uploading image.png…]()
+# Load the custom inverter layout in magic
+
+![image](https://github.com/user-attachments/assets/3d872b1b-f54a-41d4-bd08-df0081de5c8a)
 
 
+![image](https://github.com/user-attachments/assets/147bc2fb-868c-4ac0-8b6f-5ab0d5cba9e5)
+
+![image](https://github.com/user-attachments/assets/387d8422-dde7-464c-bda8-5b29b5e14499)
+
+# Extract spice Netlist
+
+![image](https://github.com/user-attachments/assets/9730a4a6-73be-4a6b-bdaf-be57a4cc90a0)
 
 
+![image](https://github.com/user-attachments/assets/04d7e957-7d12-4fc1-83ea-99648a16cadf)
+
+
+# Create final SPICE desk using sky130 tech
+
+![image](https://github.com/user-attachments/assets/d4139d43-abf0-4c7e-be63-b9b5b5aaff90)
+
+![image](https://github.com/user-attachments/assets/64b3b392-de8f-4c19-addb-07775d8662c4)
+
+![image](https://github.com/user-attachments/assets/0fed2b51-059f-41ae-a557-9ccc7767ec28)
 
 
 
