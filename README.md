@@ -757,11 +757,185 @@ IO PLACER Rivision:
 
 # Create final SPICE desk using sky130 tech
 
-![image](https://github.com/user-attachments/assets/d4139d43-abf0-4c7e-be63-b9b5b5aaff90)
+![image](https://github.com/user-attachments/assets/449e9736-233d-4278-bff8-32d467b6b932)
 
-![image](https://github.com/user-attachments/assets/64b3b392-de8f-4c19-addb-07775d8662c4)
+![image](https://github.com/user-attachments/assets/0fe3ef92-2055-4936-b2cd-89c739aed1f2)
 
-![image](https://github.com/user-attachments/assets/0fed2b51-059f-41ae-a557-9ccc7767ec28)
+
+# ngspice simulation
+
+![image](https://github.com/user-attachments/assets/ffdab85b-0d90-45a7-8118-0131b384012d)
+
+input
+
+![image](https://github.com/user-attachments/assets/efe880cd-8c79-4e94-b80f-85735085fb6f)
+
+output
+
+![image](https://github.com/user-attachments/assets/b3496352-a15d-402b-ad60-9a984a5297b7)
+
+![image](https://github.com/user-attachments/assets/c8c28dc0-07ac-4948-b35e-0e513a12e7a4)
+
+# day 3 sect3 lab pending shorts
+
+# DAY 4 : Timing Analysis with Real clocks using openSTA
+
+* Timing modeling using delay tables
+
+* Lab steps to convert grid info to track info
+
+* Lab steps to convert magic layout to std cell LEF
+
+* Introduction to timing libs and steps to include new cell in synthesis
+
+* Introduction to delay tables
+
+* Delay table usage Part 1
+
+* Delay table usage Part 2
+
+* Lab steps to configure synthesis settings to fix slack and include vsdinv
+
+* Timing analysis with ideal clocks using openSTA
+
+* Setup timing analysis and introduction to flip-flop setup time
+
+* Introduction to clock jitter and uncertainty
+
+* Lab steps to configure OpenSTA for post-synth timing analysis
+
+* Lab steps to optimize synthesis to reduce setup violations
+
+* Lab steps to do basic timing ECO
+
+* Clock tree synthesis TritonCTS and signal integrity
+
+* Clock tree routing and buffering using H-Tree algorithm
+
+* Crosstalk and clock net shielding
+
+* Lab steps to run CTS using TritonCTS
+
+* Lab steps to verify CTS runs
+
+* Timing analysis with real clock using openSTA
+
+* Setup timing analysis using real clocks
+
+* Hold timing analysis using real clocks
+
+* Lab steps to analyze timing with real clocks using OpenSTA
+
+* Lab steps to execute OpenSTA with right timing libraries and CTS assignment
+
+* Lab steps to observe impact of bigger CTS buffers on setup and hold timing
+
+# Theory
+
+# Day 3 Lab
+
+# Lab steps to convert grid info to track info
+
+![image](https://github.com/user-attachments/assets/3204cebd-08fa-4df7-87fd-25d488c36b9f)
+
+
+![image](https://github.com/user-attachments/assets/37eb9689-c599-429d-a7dc-79919b17c208)
+
+![image](https://github.com/user-attachments/assets/f8b3ca5c-db3a-466e-8ad9-bcdcea29c5d7)
+
+![image](https://github.com/user-attachments/assets/7b770fba-f038-4992-b53d-d8093ad05917)
+
+# Lab steps to convert magic layout to std cell LEF
+![image](https://github.com/user-attachments/assets/d5f5f21b-4abc-41f6-ae9e-c0ce5c80eb30)
+
+![image](https://github.com/user-attachments/assets/0930bbcb-1a92-410c-8eb6-b0120598fddb)
+
+![image](https://github.com/user-attachments/assets/9871511c-aa32-4b71-b6ce-94de178b692d)
+
+![image](https://github.com/user-attachments/assets/5b10938a-acdc-4b09-b27e-55d3d2e7fd80)
+
+![image](https://github.com/user-attachments/assets/53332981-2982-4a76-b328-5f94aff24f41)
+
+# sky130_vsdinv.lef
+
+![image](https://github.com/user-attachments/assets/dd5ea8c8-ee15-4bda-8aa2-1ec294b3f75e)
+
+# Introduction to timing libs and steps to include new cell in synthesis
+
+![image](https://github.com/user-attachments/assets/f189a358-93c3-405c-956a-d59867769ba4)
+
+![image](https://github.com/user-attachments/assets/45994b4e-79ab-4bf7-85b3-c7c1addfaea1)
+
+# sky_130_fd_sc_hd_typical.lib
+
+![image](https://github.com/user-attachments/assets/94aeb299-f4b4-4d54-9a97-d8ee68394a6d)
+
+# sky_130_fd_sc_hd_slow.lib
+
+![image](https://github.com/user-attachments/assets/8af1630b-52b2-4660-8b44-6a972abc6459)
+
+# sky_130_fd_sc_hd_fast.lib
+
+![image](https://github.com/user-attachments/assets/6d4c8ca6-c849-45d4-a0c2-8a6358aa94c4)
+
+
+![image](https://github.com/user-attachments/assets/997fdc16-ae9f-4cb5-9479-52b07868de94)
+
+![image](https://github.com/user-attachments/assets/55135d9d-079d-4129-aac5-1c931e96cebc)
+
+
+# config.tcl file
+
+![image](https://github.com/user-attachments/assets/f9e7b0a7-4af8-4ec1-9ba2-4b2d75a10a2d)
+
+# Openlane Execution
+
+# ./flow.tcl
+
+# package require openlane 0.9
+
+# prep -design picorv32a -tag 17-02_06-53 -overwrite
+
+![image](https://github.com/user-attachments/assets/960eddd5-a668-4fe8-ade3-277879fefde5)
+
+
+![image](https://github.com/user-attachments/assets/e7369078-2335-4c13-badc-d1ed2d4e149d)
+
+# run_synthesis
+
+![image](https://github.com/user-attachments/assets/b99f45e5-1367-401d-90f3-c341cbb7eecd)
+
+# README.md file
+
+![image](https://github.com/user-attachments/assets/6d8d7792-1439-4064-b2e9-b59848547ce2)
+
+# To fix slack 
+
+![image](https://github.com/user-attachments/assets/f7047d22-7af9-4011-b065-cf6fe1f51a6d)
+
+
+# Again Run Synthesis
+
+# P
+init_ floo.........p
+
+![image](https://github.com/user-attachments/assets/b4ff39dd-372e-4c1b-a867-cc70800b4a81)
+
+
+![image](https://github.com/user-attachments/assets/be8e623f-750f-44f6-b240-cead719fdd13)
+
+![image](https://github.com/user-attachments/assets/fe659c91-f98d-41fc-926d-24a6ae1cc60e)
+
+![image](https://github.com/user-attachments/assets/6b4e9bfa-c8aa-4754-9f54-d18788520895)
+
+# Post Synthesis timing analysis with openSTA tool
+
+
+
+
+
+
+
 
 
 
