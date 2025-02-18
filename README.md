@@ -832,7 +832,7 @@ output
 
 # Theory
 
-# Day 3 Lab
+# Day 4 Lab
 
 # Lab steps to convert grid info to track info
 
@@ -894,7 +894,7 @@ output
 
 # package require openlane 0.9
 
-# prep -design picorv32a -tag 17-02_06-53 -overwrite
+# prep -design picorv32a -tag 17-02_06-53 -overwrite pen th
 
 ![image](https://github.com/user-attachments/assets/960eddd5-a668-4fe8-ade3-277879fefde5)
 
@@ -946,35 +946,72 @@ init_ floo.........p
 
 # Make timing ECO fixes to remove all violations
 
-![image](https://github.com/user-attachments/assets/48df4a26-2051-42cf-b653-a286ab9a404e)
+![image](https://github.com/user-attachments/assets/fb4a61fa-847c-4ef7-b008-9ff3c8854f0b)
 
-![image](https://github.com/user-attachments/assets/fb0b9018-2281-4ec6-99c5-aea4e3fe6404)
+![image](https://github.com/user-attachments/assets/d545221a-c535-4103-ba7a-7260e96f5d7a)
+
+![image](https://github.com/user-attachments/assets/b6f82549-bd3a-4611-b2af-5b3613177fc4)
+
+
 
 # cell getting Replaced
 
-![image](https://github.com/user-attachments/assets/04a3572f-93e7-44e6-994b-3ea136bb6394)
+![image](https://github.com/user-attachments/assets/e54aa4ac-40a5-4cfa-9160-d67c7c4a7c96)
+
+
 
 # Before & After Slack
 
-![image](https://github.com/user-attachments/assets/09738df9-1b5b-4d9a-b191-5f55f32e3096)
+![image](https://github.com/user-attachments/assets/80fa4fcc-2abb-44c8-b331-49f9a6b6f95c)
 
 
-![image](https://github.com/user-attachments/assets/e9e3ffc8-250e-4885-b3a5-b94036f9a7c0)
-
-It is reduced from -44.62 to -44.40
-
+![image](https://github.com/user-attachments/assets/a871efd0-776b-4f80-a83a-f5eadd172f85)
 
 
 
+It is reduced from -5.39 to -5.33
+
+# Replace the old netlist with the new netlist generated after timing ECO fix and implement the floorplan, placement and cts
+
+![image](https://github.com/user-attachments/assets/a31cd4f6-2668-4fb1-b6ad-4cb8190947e9)
+
+# Verified that the netlist is overwritten
+
+![image](https://github.com/user-attachments/assets/6bc257f6-08bd-4f49-92a7-588c1a373758)
+
+# Load the design and run necessary stages
+
+![image](https://github.com/user-attachments/assets/a7b80956-64b9-4a61-867a-36e942dc7a29)
 
 
+* run_synthesis
 
+  ![image](https://github.com/user-attachments/assets/1cf5e974-9321-4f9b-b94f-4e8a15f99db2)
 
+*init_floorplan
 
+![image](https://github.com/user-attachments/assets/ffedc28e-e7aa-42bc-9109-5fdb258ab29f)
 
+* place_io
 
+![image](https://github.com/user-attachments/assets/dae953d2-05cc-4004-810f-e04729dc0d26)
 
+* tap_decap_or
 
+![image](https://github.com/user-attachments/assets/8f7590bc-d66f-4463-a51f-8dbf0a4234cc)
+
+* run_placement
+  
+
+# CTS
+
+run_cts
+
+![image](https://github.com/user-attachments/assets/4ecd354b-e6e5-479c-a71b-63cdcaef7aa1)
+
+# cts.tcl file
+
+![image](https://github.com/user-attachments/assets/59c17bcb-a508-475c-b4f3-3c2aa566bc24)
 
 
 
