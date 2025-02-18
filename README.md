@@ -886,7 +886,7 @@ output
 
 # config.tcl file
 
-![image](https://github.com/user-attachments/assets/f9e7b0a7-4af8-4ec1-9ba2-4b2d75a10a2d)
+![image](https://github.com/user-attachments/assets/4ce0a43b-a951-4109-8ae2-54512b7ce08e)
 
 # Openlane Execution
 
@@ -930,16 +930,38 @@ init_ floo.........p
 
 # Post Synthesis timing analysis with openSTA tool
 
+# Go to openlane directory
+
+# invole sta tool by using "sta" command
+
+![image](https://github.com/user-attachments/assets/7671521c-7d5b-4935-aa7a-2f2bb303061d)
+
+# prep_sta.conf file 
+
+![image](https://github.com/user-attachments/assets/6dd401e9-be16-4b47-b8dc-e92003ae6f44)
+
+# picorv32a.sdc file 
+
+![image](https://github.com/user-attachments/assets/2c253062-6573-4899-bcbc-de28deacd638)
+
+# Make timing ECO fixes to remove all violations
+
+![image](https://github.com/user-attachments/assets/48df4a26-2051-42cf-b653-a286ab9a404e)
+
+![image](https://github.com/user-attachments/assets/fb0b9018-2281-4ec6-99c5-aea4e3fe6404)
+
+# cell getting Replaced
+
+![image](https://github.com/user-attachments/assets/04a3572f-93e7-44e6-994b-3ea136bb6394)
+
+# Before & After Slack
+
+![image](https://github.com/user-attachments/assets/09738df9-1b5b-4d9a-b191-5f55f32e3096)
 
 
+![image](https://github.com/user-attachments/assets/e9e3ffc8-250e-4885-b3a5-b94036f9a7c0)
 
-
-
-
-
-
-
-
+It is reduced from -44.62 to -44.40
 
 
 
