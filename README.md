@@ -1,4 +1,4 @@
-
+# 5 DAYS WORKSHOP TOPICS
 
 # Contents
 
@@ -776,9 +776,12 @@ output
 
 ![image](https://github.com/user-attachments/assets/c8c28dc0-07ac-4948-b35e-0e513a12e7a4)
 
-# day 3 sect3 lab pending shorts
+![image](https://github.com/user-attachments/assets/504433ed-e3e1-4155-b266-77698373deee)
+
 
 # DAY 4 : Timing Analysis with Real clocks using openSTA
+
+# Contents:
 
 * Timing modeling using delay tables
 
@@ -831,6 +834,67 @@ output
 * Lab steps to observe impact of bigger CTS buffers on setup and hold timing
 
 # Theory
+
+![image](https://github.com/user-attachments/assets/f7ba9de0-b838-43c4-a516-e8310c43c7de)
+
+![image](https://github.com/user-attachments/assets/3d6a5f77-f34d-4517-aa48-1f3bd5ce06b2)
+
+![image](https://github.com/user-attachments/assets/bb45c21e-5294-46bc-8aad-71ed2ab20063)
+
+Assume c1=c2=c3=c4=25fF and Cbuf1=Cbuf2=30fF
+
+Total Cap at node 'A'=> 60fF
+
+Total Cap at node 'B'=> 50fF
+
+Total Cap at node 'C'=> 50fF
+
+Example:
+
+![image](https://github.com/user-attachments/assets/377c7b53-a3a1-4183-8b14-772bac3a84dd)
+
+![image](https://github.com/user-attachments/assets/a8410720-9968-4b20-b4da-d8750f1a41f1)
+
+
+# Timing analysis using openSTA
+
+![image](https://github.com/user-attachments/assets/55c90d6f-33ed-4c61-933f-b0d44554f6c0)
+
+![image](https://github.com/user-attachments/assets/a069a99a-6e40-4748-bae5-814295cffb45)
+
+![image](https://github.com/user-attachments/assets/52b4a7f1-cc6a-4193-8e50-783f905431c7)
+
+![image](https://github.com/user-attachments/assets/85ab955d-00a5-4031-8fef-fbc7f141118d)
+
+
+# Clock tree routing
+
+![image](https://github.com/user-attachments/assets/3607b07e-2070-440f-bf71-76bdbbd20058)
+
+![image](https://github.com/user-attachments/assets/17482635-52c2-4499-849f-d2beb99ec2f2)
+
+![image](https://github.com/user-attachments/assets/d637280b-7ee7-47c7-b9bc-2c7b43e92000)
+
+
+![image](https://github.com/user-attachments/assets/3ef991a2-7a0e-433d-b4d8-a22e45cfa89b)
+
+![image](https://github.com/user-attachments/assets/1fa24129-b10d-47c4-bfc7-eccd6469060b)
+
+# Crosstalk and Clock net shielding
+
+![image](https://github.com/user-attachments/assets/5e71f7cf-a138-4b42-8f74-9e885f5a37ee)
+
+![image](https://github.com/user-attachments/assets/8485bcda-6164-4b58-b7da-414fa71d4a0c)
+
+# Setup and Hold timing analysis
+
+![image](https://github.com/user-attachments/assets/e7e2a7b3-24ee-4bfd-8ab2-77034e1e4266)
+
+![image](https://github.com/user-attachments/assets/c31f0805-bde6-4e44-80e1-2a98d4b6b7d6)
+
+![image](https://github.com/user-attachments/assets/d51b6bdb-0952-45ca-b094-1bdb723ea9ca)
+
+![image](https://github.com/user-attachments/assets/5e37f635-fed4-4ff2-b2e3-17f6ac643bb9)
 
 # Day 4 Lab
 
@@ -1042,5 +1106,109 @@ run_cts
 ![image](https://github.com/user-attachments/assets/0def4e7d-2abf-4c6a-83f0-14b4b9a65872)
 
 ![image](https://github.com/user-attachments/assets/cf68f17b-96f9-4dfa-a1fa-8fff1816ab52)
+
+
+# Day % :Final steps for RTL2GDS using tritonRoute and openSTA
+
+# Contents :
+
+* Routing and design rule check (DRC)
+
+* Introduction to Maze Routing and Lee's algorithm
+
+* Lee's Algorithm conclusion
+
+* Design Rule Check
+
+* Power Distribution Network and routing
+
+* Lab steps to build power distribution network
+
+* Lab steps from power straps to std cell power
+
+* Basics of global and detail routing and configure TritonRoute
+
+* TritonRoute Features
+
+* TritonRoute feature 1 - Honors pre-processed route guides
+
+* TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
+
+* TritonRoute method to handle connectivity
+
+* Routing topology algorithm and final files list post-route
+
+# Theory :
+
+![image](https://github.com/user-attachments/assets/eeb4a2ce-27f6-4f36-9338-6aef1440805d)
+
+![image](https://github.com/user-attachments/assets/d37a6214-5209-4dc8-b626-f053985b2fa0)
+
+![image](https://github.com/user-attachments/assets/1e9b5481-c63d-40e6-b665-10d9a07907c7)
+
+# Design rule check (DRC)
+
+![image](https://github.com/user-attachments/assets/5095ce67-774a-4022-a81a-ae4e25c98b56)
+
+![image](https://github.com/user-attachments/assets/df7e8e76-7857-4694-b327-ba41aad6123f)
+
+![image](https://github.com/user-attachments/assets/85980b02-fc93-4722-b44b-375698f34118)
+
+![image](https://github.com/user-attachments/assets/869629f7-99b9-4e5f-a777-2f121e34ba81)
+
+# Routing
+
+![image](https://github.com/user-attachments/assets/5d74f127-3a77-4adb-beb3-b38db4d8fb86)
+
+![image](https://github.com/user-attachments/assets/c2275484-ce26-4c87-bfcb-e7a22bdd43d5)
+
+![image](https://github.com/user-attachments/assets/8975e411-375e-489f-b74d-ad15f40035cf)
+
+![image](https://github.com/user-attachments/assets/f3320f9f-8947-4374-b6d4-4562874ed973)
+
+![image](https://github.com/user-attachments/assets/bf26306e-3978-4115-983a-fdc00a0eb654)
+
+# Routing Topology Algorithm
+
+![image](https://github.com/user-attachments/assets/0f9f670e-28e9-4fa0-9e59-6ae83442d54f)
+
+# Day 5 LAB :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
