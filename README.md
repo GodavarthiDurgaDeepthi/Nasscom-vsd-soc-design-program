@@ -1,4 +1,4 @@
-# 5 DAYS WORKSHOP TOPICS
+![image](https://github.com/user-attachments/assets/60cc3de0-37fc-41f8-8373-e29ad88ba3b0)# 5 DAYS WORKSHOP TOPICS
 
 # Contents
 
@@ -978,11 +978,12 @@ Example:
 ![image](https://github.com/user-attachments/assets/f7047d22-7af9-4011-b065-cf6fe1f51a6d)
 
 
-# Again Run Synthesis
 
-# P
-init_ floo.........p
 
+# run_synthesis
+# init_ floorplan 
+# pace_io
+# tap_decap_or
 ![image](https://github.com/user-attachments/assets/b4ff39dd-372e-4c1b-a867-cc70800b4a81)
 
 
@@ -994,7 +995,15 @@ init_ floo.........p
 
 # Post Synthesis timing analysis with openSTA tool
 
-# Go to openlane directory
+Commands:
+
+#Change directory to openlane
+
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+#Command to invoke OpenSTA tool with script
+
+sta pre_sta.conf
 
 # invole sta tool by using "sta" command
 
@@ -1016,13 +1025,9 @@ init_ floo.........p
 
 ![image](https://github.com/user-attachments/assets/b6f82549-bd3a-4611-b2af-5b3613177fc4)
 
-
-
 # cell getting Replaced
 
 ![image](https://github.com/user-attachments/assets/e54aa4ac-40a5-4cfa-9160-d67c7c4a7c96)
-
-
 
 # Before & After Slack
 
@@ -1030,8 +1035,6 @@ init_ floo.........p
 
 
 ![image](https://github.com/user-attachments/assets/a871efd0-776b-4f80-a83a-f5eadd172f85)
-
-
 
 It is reduced from -5.39 to -5.33
 
@@ -1107,8 +1110,15 @@ run_cts
 
 ![image](https://github.com/user-attachments/assets/cf68f17b-96f9-4dfa-a1fa-8fff1816ab52)
 
+# Post-CTS OpenROAD timing analysis
 
-# Day % :Final steps for RTL2GDS using tritonRoute and openSTA
+![image](https://github.com/user-attachments/assets/a5069124-3e93-4895-896a-1a9bf4ab7642)
+
+![image](https://github.com/user-attachments/assets/158e55d4-faeb-418d-8d7e-2d121aab9316)
+
+
+
+# Day 5 :Final steps for RTL2GDS using tritonRoute and openSTA
 
 # Contents :
 
@@ -1174,13 +1184,29 @@ run_cts
 
 # Day 5 LAB :
 
+# Perform generation of Power Distribution Network (PDN)
+
+gen_pdn
+
+![image](https://github.com/user-attachments/assets/8db660e4-bf04-404f-b221-88dba83c09ab)
 
 
+![image](https://github.com/user-attachments/assets/c51cba24-56f6-4bfe-9946-cf492b734a02)
 
 
+![image](https://github.com/user-attachments/assets/ee69cee8-13b0-4a3e-8bf4-8b90a72af1dc)
 
 
+![image](https://github.com/user-attachments/assets/9b98f757-fa68-465d-9fce-0d328d8cf5bd)
 
+
+![image](https://github.com/user-attachments/assets/fb52dd3f-66f1-476b-9c82-0f7e1528731d)
+
+
+![image](https://github.com/user-attachments/assets/7c29b2d4-a23c-456f-9324-c8417d8b23a9)
+
+
+# Perform detailed routing using TritonRoute and explore the routed layout
 
 
 
