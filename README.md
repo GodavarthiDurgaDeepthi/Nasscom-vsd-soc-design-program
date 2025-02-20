@@ -1,8 +1,8 @@
-![image](https://github.com/user-attachments/assets/60cc3de0-37fc-41f8-8373-e29ad88ba3b0)# 5 DAYS WORKSHOP TOPICS
-
-# Contents
+# 5 DAYS WORKSHOP TOPICS
 
 # Day 1 : Inception of open-source EDA, OpenLANE and Sky130 PDK 
+
+# Contents
 
 * How to talk to computers
 
@@ -60,7 +60,7 @@ The Entire Design starts from Architecture and it can be implemented by  RTL to 
 ![image](https://github.com/user-attachments/assets/bde5b9ef-1a30-442c-8098-ff73d634637f) 
 
 
-Basic Linux Commands:
+# Basic Linux Commands:
 
 cd : opens the particular folder
 
@@ -84,7 +84,7 @@ This flow starts from RTL to GDSII,and it is also called automated PnR and /or p
 ![image](https://github.com/user-attachments/assets/cfe1cd01-37ea-4fb8-82b5-821a51bfcdad)
 
 
-* SYNTHESIS :
+# SYNTHESIS :
 
 It is the process of converting High level description language into technology mapped gate level Netlist using Standard cell library.
 
@@ -99,7 +99,7 @@ It is the process of converting High level description language into technology 
           * layout ....
 
 
-* FLOORPLAN AND POWERPLAN:
+  # FLOORPLAN AND POWERPLAN:
 
 1)chip floorplaning: 
 
@@ -111,7 +111,7 @@ It is the process of converting High level description language into technology 
 
 ![image](https://github.com/user-attachments/assets/b8051e58-79d4-4c01-9366-d79f213332f0)
 
-* PLACEMENT: 
+# PLACEMENT: 
  
  place the cells on the floorplan rows,aligned with the sites
 
@@ -120,7 +120,7 @@ It is the process of converting High level description language into technology 
 ![image](https://github.com/user-attachments/assets/4817881a-2728-4023-a441-5605f7e97f70)
 
 
-* CLOCK TREE SYNTHESIS(CTS):
+# CLOCK TREE SYNTHESIS(CTS):
 
 Create a clock tree distribution network
         
@@ -134,7 +134,7 @@ Create a clock tree distribution network
   
   ![image](https://github.com/user-attachments/assets/a4d6d5b9-fde0-44c4-877d-e6ed8d556af7)
 
-* ROUTING :
+# ROUTING :
 
 Implementing the internal connections using the available Metal layers
 
@@ -151,7 +151,7 @@ Implementing the internal connections using the available Metal layers
   * Detailed Routing:uses the routing guides to implement the actual wiring.
 
 
-* SIGN OFF:
+# SIGN OFF:
 
 * Physical verifications:
 
@@ -954,11 +954,15 @@ Example:
 
 # Openlane Execution
 
-# ./flow.tcl
+ ./flow.tcl -interactive
 
-# package require openlane 0.9
+ package require openlane 0.9
 
-# prep -design picorv32a -tag 17-02_06-53 -overwrite pen th
+ prep -design picorv32a -tag 17-02_06-53 -overwrite 
+
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+
+add_lefs -src $lefs
 
 ![image](https://github.com/user-attachments/assets/960eddd5-a668-4fe8-ade3-277879fefde5)
 
@@ -977,13 +981,14 @@ Example:
 
 ![image](https://github.com/user-attachments/assets/f7047d22-7af9-4011-b065-cf6fe1f51a6d)
 
+ * run_synthesis
 
+ * init_ floorplan 
+ 
+ * pace_io
+ 
+ * tap_decap_or
 
-
-# run_synthesis
-# init_ floorplan 
-# pace_io
-# tap_decap_or
 ![image](https://github.com/user-attachments/assets/b4ff39dd-372e-4c1b-a867-cc70800b4a81)
 
 
@@ -1205,17 +1210,33 @@ gen_pdn
 
 ![image](https://github.com/user-attachments/assets/7c29b2d4-a23c-456f-9324-c8417d8b23a9)
 
+![image](https://github.com/user-attachments/assets/c0f07989-983b-4957-a73e-eaf502344cf8)
 
 # Perform detailed routing using TritonRoute and explore the routed layout
 
+run_routing
 
+Load routed def in magic
 
+![image](https://github.com/user-attachments/assets/bb47803f-8e99-4d6b-9b63-504bf6148be0)
 
+![image](https://github.com/user-attachments/assets/90275467-90a7-4876-bd10-d749a6354346)
 
+![image](https://github.com/user-attachments/assets/0600ffb2-7b16-40b4-b166-e22993f3abe0)
 
+fastroute.guide file
 
+![image](https://github.com/user-attachments/assets/2f5818b6-3ce9-4db7-b07f-f204dab6234e)
 
+# Post-Route parasitic extraction
 
+Parasitics command is already run and spef is extracted
+
+In runs folder, where routing outputs are dumped and we'll find the SPEF there.
+
+# Acknowledgements
+
+Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
 
 
 
